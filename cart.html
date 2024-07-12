@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MM Event Rentals - Cart</title>
+        <title>MM Event Rentals-Cart</title>
         <link href = "style.css" rel = "stylesheet">
         <script src="jscontrol.js"></script>
     </head>
-    <body>
-        <h1>Cart Page</h1>
+    <header>
+        <ul>
+            <li><button onclick="DropdownButtonClick()">Dropdown</button></li>
+            <li id = "logo"><button onclick="RedirectHome()">Logo</button></li>
+            <li id = "cart"><button id="cartButton" onclick="RedirectCart()">Cart</button></li>
+        </ul>
+    </header>
+    <div id="dropdown">
+        <ul>
+            <li class = "dropdownElements"><button onclick="RedirectHome()">Home</button></li>
+            <li class = "dropdownElements"><button onclick="RedirectCatalog()">Catalog</button></li>
+            <li class = "dropdownElements"><button onclick="RedirectGallery()">Gallery</button></li>
+            <li class = "dropdownElements"><button onclick="RedirectAboutUs()">About Us</button></li>
+            <div id = "dropdownSocials">
+                <ul>
+                    <li><button>ig</button></li>
+                    <li><button>fb</button></li>
+                    <li><button>x</button></li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+
+    
+    <body onload="CartLoad()">
+        <h1>Cart</h1>
+        <ul id = "cartList"></ul>
     </body>
 </html>

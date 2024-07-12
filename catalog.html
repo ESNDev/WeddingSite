@@ -9,15 +9,15 @@
         <ul>
             <li><button onclick="DropdownButtonClick()">Dropdown</button></li>
             <li id = "logo"><button onclick="RedirectHome()">Logo</button></li>
-            <li id = "cart"><button onclick="RedirectCart()">Cart</button></li>
+            <li id = "cart"><button id="cartButton" onclick="RedirectCart()">Cart</button></li>
         </ul>
     </header>
     <div id="dropdown">
         <ul>
             <li class = "dropdownElements"><button onclick="RedirectHome()">Home</button></li>
             <li class = "dropdownElements"><button onclick="RedirectCatalog()">Catalog</button></li>
-            <li class = "dropdownElements"><button>Gallery</button></li>
-            <li class = "dropdownElements"><button>About Us</button></li>
+            <li class = "dropdownElements"><button onclick="RedirectGallery()">Gallery</button></li>
+            <li class = "dropdownElements"><button onclick="RedirectAboutUs()">About Us</button></li>
             <div id = "dropdownSocials">
                 <ul>
                     <li><button>ig</button></li>
@@ -29,21 +29,9 @@
     </div>
 
 
-    <body>
+    <body onload = "CatalogLoad()">
         <h1>Catalog</h1>
         <h2>List1</h2>
-        <ul class = "catalogList">
-            <li><button>item1</button></li>
-            <li><button>item2</button></li>
-            <li><button>item3</button></li>
-            <li><button>item4</button></li>
-        </ul>
-        <h2>List2</h2>
-        <ul class = "catalogList">
-            <li><button>item1</button></li>
-            <li><button>item2</button></li>
-            <li><button>item3</button></li>
-            <li><button>item4</button></li>
-        </ul>
+        <ul id = "catalogList1"></ul>
     </body>
 </html>
