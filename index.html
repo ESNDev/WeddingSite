@@ -4,11 +4,12 @@
         <title>MM Event Rentals</title>
         <link href = "style.css" rel = "stylesheet">
         <script src="jscontrol.js"></script>
+        <link rel="icon" href="logo.png" type="image/icon type">
     </head>
     <header>
         <ul>
             <li><button onclick="DropdownButtonClick()">Dropdown</button></li>
-            <li id = "logo"><button onclick="RedirectHome()">Logo</button></li>
+            <img src = "logo.png" id = "logo" onclick="RedirectHome()">
             <li id = "cart"><button id="cartButton" onclick="RedirectCart()">Cart</button></li>
         </ul>
     </header>
@@ -32,5 +33,21 @@
     
     <body onload="HomeLoad()">
         <h1>This is the home page.</h1>
+        <hr>
+        <h2>Gallery Preview</h2>
+        <ul id = "homePreview">
+            <img src="test.png">
+            <img src="test.png">
+            <img src="test.png">
+            <img src="test.png">
+            <img src="test.png">
+            <img src="test.png">
+        </ul>
     </body>
+    <hr>
+    <footer>
+        <h1>Socials</h1>
+        <img src="logo.png">
+        <h1>Contact info</h1>
+    </footer>
 </html>

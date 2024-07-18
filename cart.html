@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MM Event Rentals-Cart</title>
+        <title>MM Event Rentals</title>
         <link href = "style.css" rel = "stylesheet">
         <script src="jscontrol.js"></script>
+        <link rel="icon" href="logo.png" type="image/icon type">
     </head>
     <header>
         <ul>
             <li><button onclick="DropdownButtonClick()">Dropdown</button></li>
-            <li id = "logo"><button onclick="RedirectHome()">Logo</button></li>
+            <img src = "logo.png" id = "logo" onclick="RedirectHome()">
             <li id = "cart"><button id="cartButton" onclick="RedirectCart()">Cart</button></li>
         </ul>
     </header>
@@ -30,7 +31,7 @@
 
 
     
-    <body onload="CartLoad()">
+    <body onload="CartLoad()" id = "cartBody">
         <h1>Cart</h1>
         <ul id = "cartList"></ul>
     </body>
