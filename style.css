@@ -313,3 +313,13 @@ footer img {
     padding: 0;
     margin: 0;
 }
+
+@media (orientation: portrait) {
+    header {
+        height: 200px;
+    }
+    header ul li{
+        width: 250px;
+        height: 150px;
+    }
+}

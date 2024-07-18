@@ -66,13 +66,16 @@ function CatalogLoad()
         }
         li.appendChild(button);
     }
-    if(JSON.parse(localStorage.cartItem).length > 0)
+    if(sessionStorage.cartItem != null)
     {
-        document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
-    }
-    else
-    {
-        document.getElementById("cartButton").textContent = "Cart";
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
+        {
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
+        }
+        else
+        {
+            document.getElementById("cartButton").textContent = "Cart";
+        }
     }
 }
 function GalleryLoad()
@@ -84,29 +87,39 @@ function GalleryLoad()
         img.src = galleryImage[i];
         list.appendChild(img);
     }
-    if(JSON.parse(localStorage.cartItem).length > 0)
+    if(sessionStorage.cartItem != null)
     {
-        document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
-    }
-    else
-    {
-        document.getElementById("cartButton").textContent = "Cart";
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
+        {
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
+        }
+        else
+        {
+            document.getElementById("cartButton").textContent = "Cart";
+        }
     }
 }
 function HomeLoad()
 {
-    if(JSON.parse(localStorage.cartItem).length > 0)
+    if(sessionStorage.cartItem != null)
     {
-        document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
-    }
-    else
-    {
-        document.getElementById("cartButton").textContent = "Cart";
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
+        {
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
+        }
+        else
+        {
+            document.getElementById("cartButton").textContent = "Cart";
+        }
     }
 }
 function CartLoad()
 {
-    let cartItem = JSON.parse(localStorage.cartItem);
+    let cartItem = [];
+    if(sessionStorage.cartItem != null)
+    {
+        cartItem = JSON.parse(sessionStorage.cartItem);
+    }
     let list = document.getElementById("cartList");
     for(i = 0; i < cartItem.length; i++)
     {
@@ -140,46 +153,52 @@ function CartLoad()
         }
         ul2.appendChild(button);
     }
-    if(JSON.parse(localStorage.cartItem).length > 0)
+    if(sessionStorage.cartItem != null)
     {
-        document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
-        let body = document.getElementById("cartBody");
-        let checkoutform = document.createElement("form");
-        checkoutform.action = "send_email.php";
-        body.appendChild(checkoutform);
-        let checkoutNameLabel = document.createElement("label");
-        checkoutNameLabel.for = "name";
-        checkoutNameLabel.innerText = "Name";
-        checkoutform.appendChild(checkoutNameLabel);
-        let checkoutNameInput = document.createElement("input");
-        checkoutNameInput.type = "text";
-        checkoutNameInput.id = "name";
-        checkoutNameInput.name = "name"
-        checkoutNameInput.required = "true";
-        checkoutform.appendChild(checkoutNameInput);
-        let checkoutSubmit = document.createElement("input");
-        checkoutSubmit.type = "submit";
-        checkoutSubmit.value = "Submit";
-        checkoutform.appendChild(checkoutSubmit);
-    }
-    else
-    {
-        document.getElementById("cartButton").textContent = "Cart";
-        let body = document.getElementById("cartBody");
-        let checkoutfirst = document.createElement("h2");
-        checkoutfirst.innerText = "The cart is empty";
-        body.appendChild(checkoutfirst);
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
+        {
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
+            let body = document.getElementById("cartBody");
+            let checkoutform = document.createElement("form");
+            checkoutform.action = "send_email.php";
+            body.appendChild(checkoutform);
+            let checkoutNameLabel = document.createElement("label");
+            checkoutNameLabel.for = "name";
+            checkoutNameLabel.innerText = "Name";
+            checkoutform.appendChild(checkoutNameLabel);
+            let checkoutNameInput = document.createElement("input");
+            checkoutNameInput.type = "text";
+            checkoutNameInput.id = "name";
+            checkoutNameInput.name = "name"
+            checkoutNameInput.required = "true";
+            checkoutform.appendChild(checkoutNameInput);
+            let checkoutSubmit = document.createElement("input");
+            checkoutSubmit.type = "submit";
+            checkoutSubmit.value = "Submit";
+            checkoutform.appendChild(checkoutSubmit);
+        }
+        else
+        {
+            document.getElementById("cartButton").textContent = "Cart";
+            let body = document.getElementById("cartBody");
+            let checkoutfirst = document.createElement("h2");
+            checkoutfirst.innerText = "The cart is empty";
+            body.appendChild(checkoutfirst);
+        }
     }
 }
 function AboutUsLoad()
 {
-    if(JSON.parse(localStorage.cartItem).length > 0)
+    if(sessionStorage.cartItem != null)
     {
-        document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
-    }
-    else
-    {
-        document.getElementById("cartButton").textContent = "Cart";
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
+        {
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
+        }
+        else
+        {
+            document.getElementById("cartButton").textContent = "Cart";
+        }
     }
 }
 
@@ -187,25 +206,25 @@ function AddToCart(p_item)
 {
     let canAdd = true;
     let cartItem = [];
-    if(localStorage.cartItem != "")
+    if(sessionStorage.cartItem != "" && sessionStorage.cartItem != null)
     {
-        cartItem = JSON.parse(localStorage.cartItem);
-    }
-    for(i = 0; i < cartItem.length; i++)
-    {
-        if(cartItem[i] === p_item)
+        cartItem = JSON.parse(sessionStorage.cartItem);
+        for(i = 0; i < cartItem.length; i++)
         {
-            alert("This item is already in your cart.");
-            canAdd = false;
+            if(cartItem[i] === p_item)
+            {
+                alert("This item is already in your cart.");
+                canAdd = false;
+            }
         }
     }
     if(canAdd)
     {
         cartItem.push(p_item);
-        localStorage.cartItem = JSON.stringify(cartItem);
-        if(JSON.parse(localStorage.cartItem).length > 0)
+        sessionStorage.cartItem = JSON.stringify(cartItem);
+        if(JSON.parse(sessionStorage.cartItem).length > 0)
         {
-            document.getElementById("cartButton").textContent = "("+JSON.parse(localStorage.cartItem).length+") Cart";
+            document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
         }
         else
         {
@@ -217,8 +236,8 @@ function AddToCart(p_item)
 function RemoveFromCart(p_i)
 {
     let cartItem = [];
-    cartItem = JSON.parse(localStorage.cartItem);
+    cartItem = JSON.parse(sessionStorage.cartItem);
     cartItem.splice(p_i, 1);
-    localStorage.cartItem = JSON.stringify(cartItem);
+    sessionStorage.cartItem = JSON.stringify(cartItem);
     window.location.href = "./cart.html"
 }
