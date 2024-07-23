@@ -124,12 +124,16 @@ button:hover {
     padding: 0;
     margin: 0;
     border-radius: 5px;
-    background-color: rgb(200, 200, 200, 1);
     border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 150px;
+    height: 50px;
+}
+#dropdown ul li img {
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
 }
 #dropdown ul li button:hover {
     background-color: rgb(150, 150, 150, 1);
@@ -238,27 +242,33 @@ p {
 }
 #cartList ul img {
     border-radius: 20px;
-    width: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
 }
 #cartList ul ul {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 10px;
+    margin: auto;
+    margin-left: 10px;
     width: 50%;
     justify-content: center;
 }
 #cartList ul ul h2 {
-    height: 25%;
+    height: 20px;
     width: 100%;
 }
 #cartList ul ul p {
-    height: 50%;
+    height: 180px;
     width: 100%;
 }
 #cartList ul ul button {
-    height: 25%;
+    height: 100px;
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
 }
 
 #checkoutMessageInput {
@@ -298,6 +308,15 @@ footer img {
     padding: 0;
     margin: 0;
 }
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+footer ul img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
 
 #homePreview {
     display: grid;
@@ -314,7 +333,7 @@ footer img {
     margin: 0;
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 1366px) {
     header {
         height: 200px;
     }
@@ -337,9 +356,6 @@ footer img {
         width: 600px;
         height: 1200px;
     }
-    #dropdown ul {
-
-    }
     #dropdown ul li {
         margin-left: auto;
         margin-right: auto;
@@ -353,18 +369,14 @@ footer img {
         height: 100%;
         font-size: 50px;
     }
-
-    #catalogList1 {
-
+    #dropdown ul li img {
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
     }
+
     #catalogList1 ul{
         height: 400px;
-    }
-    #catalogList1 img {
-
-    }
-    #catalogList1 ul li {
-
     }
     #catalogList1 ul li h2{
         height: 20%;
@@ -378,5 +390,26 @@ footer img {
         width: 90%;
         height: 40%;
         font-size: 40px;
+    }
+
+    h2{
+        font-size: 60px;
+    }
+    #homePreview{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+    footer img {
+        height: 300px;
+    }
+    footer ul img {
+        width: 200px;
+        height: 200px;
     }
 }
