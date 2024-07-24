@@ -22,13 +22,13 @@ header {
 }
 button{
     color: white;
-    background-color: #58658C;
+    background-color: #000000;
     border-radius: 10px;
     border: none;
 }
 button:hover {
     cursor: pointer;
-    background-color: #465170;
+    background-color: #555555;
     transition: background-color 100ms linear 0ms;
 }
 header ul {
@@ -183,6 +183,7 @@ header ul {
     height: 25%;
     width: 50%;
     border-radius: 20px;
+    font-size: 30px;
 }
 
 body {
