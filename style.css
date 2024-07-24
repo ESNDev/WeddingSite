@@ -55,7 +55,7 @@ header ul {
     width: 300px;
     height: 100px;
     padding: 0;
-    border-radius: 150px;
+    border-radius: 0px;
     margin: 0;
 }
 #logo:hover {
@@ -295,7 +295,7 @@ footer img {
     height: 180px;
     padding: 0px;
     margin: 10px;
-    border-radius: 150px;
+    border-radius: 0px;
 }
 footer ul {
     display: flex;
@@ -305,7 +305,7 @@ footer ul img {
     width: 100px;
     height: 100px;
     margin: auto;
-    border-radius: 0;
+    border-radius: 0px;
 }
 footer ul img:hover {
     cursor: pointer;
@@ -343,8 +343,9 @@ footer ul img:hover {
         margin-left: 20px;
     }
     #logo {
-        height: 200px;
-        width: 400px;
+        margin-top: 30px;
+        height: 150px;
+        width: 450px;
     }
     #cartButton {
         height: 160px;
