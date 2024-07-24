@@ -158,24 +158,6 @@ function CartLoad()
         if(JSON.parse(sessionStorage.cartItem).length > 0)
         {
             document.getElementById("cartButton").textContent = "("+JSON.parse(sessionStorage.cartItem).length+") Cart";
-            let body = document.getElementById("cartBody");
-            let checkoutform = document.createElement("form");
-            checkoutform.action = "send_email.php";
-            body.appendChild(checkoutform);
-            let checkoutNameLabel = document.createElement("label");
-            checkoutNameLabel.for = "name";
-            checkoutNameLabel.innerText = "Name";
-            checkoutform.appendChild(checkoutNameLabel);
-            let checkoutNameInput = document.createElement("input");
-            checkoutNameInput.type = "text";
-            checkoutNameInput.id = "name";
-            checkoutNameInput.name = "name"
-            checkoutNameInput.required = "true";
-            checkoutform.appendChild(checkoutNameInput);
-            let checkoutSubmit = document.createElement("input");
-            checkoutSubmit.type = "submit";
-            checkoutSubmit.value = "Submit";
-            checkoutform.appendChild(checkoutSubmit);
         }
         else
         {
