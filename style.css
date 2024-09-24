@@ -45,6 +45,10 @@ footer {
     padding: 0;
     margin: 0;
 }
+footer ul img {
+    width: auto;
+    height: 100px;
+}
 footer ul li label {
     color: black;
 }
