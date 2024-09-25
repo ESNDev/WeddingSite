@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     cursor: default;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 html {
     padding: 0;
@@ -9,40 +11,39 @@ html {
     text-align: center;
 }
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 #header1 {
     width: 100%;
     background-color: white;
-    border: 1px solid black;
 }
 #header1 img {
     width: auto;
     height: 200px;
     cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 #header2 {
     width: 100%;
+    height: 450px;
 }
 #header2 img {
     width: 100%;
-    height: 400px;
-    border: 1px solid black;
+    height: 100%;
 }
 #header3 {
     background-color: #d9c2b0;
     color: #514f49;
     box-shadow: 0px 5px 5px black;
-    height: 200px;
+    height: 150px;
     width: 100%;
-    border: 1px solid black;
 }
 #header3 ul {
     display: flex;
     margin: auto;
-    width: 70%;
+    width: 80%;
     height: 100%;
-    border: 1px solid black;
 }
 #header3 button {
     background-color: transparent;
@@ -50,35 +51,37 @@ h1 {
     color: #514f49;
     padding: 10px;
     margin: auto;
-    border: 3px solid black;
-    border-radius: 50px;
     vertical-align: middle;
-    width: 30%;
-    height: 60%;
-    font-size: 40px;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+#header3 button:hover {
+    cursor: pointer;
 }
 body h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+    color: #514f49;
 }
 body ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 body ul li {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    height: 400px;
+    height: 600px;
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -86,18 +89,19 @@ body ul li:hover {
     cursor: pointer;
 }
 body ul li img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     margin: auto;
     user-select: none;
     -webkit-user-drag: none;
+    border-radius: 100%;
 }
 body ul li img:hover {
     cursor: pointer;
 }
 body ul li label {
     color: #d9c2b0;
-    font-size: 40px;
+    font-size: 35px;
     user-select: none;
 }
 body ul li label:hover {
@@ -112,23 +116,32 @@ footer {
 footer ul {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
+}
+footer ul ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer ul img {
-    width: 600px;
+    width: 350px;
     height: auto;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 footer ul img:hover {
     cursor: pointer;
 }
 footer ul li {
     display: flex;
-    flex-direction: row;
-    width: 75%;
-    margin: auto;
-    height: 50px;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -136,17 +149,35 @@ footer ul li:hover {
     cursor: default;
 }
 footer ul li img {
-    width: 50px;
-    height: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
 }
 footer ul li img:hover {
     cursor: default;
 }
 footer ul li label {
     color: black;
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: bold;
     margin: auto;
 }
 footer ul li label:hover {
     cursor: default;
+}
+#fli2 {
+    width: auto;
+}
+#fli1 {
+    width: 500px;
+}
+#fli1 label {
+    margin-right: 100px;
+}
+#fli3 {
+    width: 500px;
+}
+#fli3 label {
+    margin-left: 10px;
+    margin-top: 35px;
 }
