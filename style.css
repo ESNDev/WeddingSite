@@ -73,19 +73,6 @@ h1 {
     margin-top: 10px;
     margin-bottom: 100px;
 }
-#decor ul {
-    display: flex;
-    border: 1px solid black;
-}
-#decor ul li {
-    width: 300px;
-    height: 400px;
-    border: 1px solid black;
-}
-#decor ul li img {
-    width: 300px;
-    height: 300px;
-}
 #indexbody ul li {
     display: flex;
     flex-direction: column;
@@ -118,6 +105,101 @@ h1 {
     user-select: none;
 }
 #indexbody ul li label:hover {
+    cursor: pointer;
+}
+#decorbody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#decorbody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#decorbody ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+#decorbody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#decorbody ul li:hover {
+    cursor: pointer;
+}
+#decorbody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#decorbody ul li img:hover {
+    cursor: pointer;
+}
+#decorbody ul li label {
+    color: #d9c2b0;
+    font-size: 35px;
+    user-select: none;
+}
+#decorbody ul li label:hover {
+    cursor: pointer;
+}
+#tabledecorbody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#tabledecorbody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#tabledecorbody ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+#tabledecorbody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#tabledecorbody ul li:hover {
+    cursor: pointer;
+}
+#tabledecorbody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#tabledecorbody ul li img:hover {
+    cursor: pointer;
+}
+#tabledecorbody ul li label {
+    color: #d9c2b0;
+    font-size: 35px;
+    user-select: none;
+}
+#tabledecorbody ul li label:hover {
     cursor: pointer;
 }
 #footer {
