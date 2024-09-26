@@ -4,3 +4,6 @@ function indexload(){
 function decorload(){
     window.location.href="./decor.html"
 }
+function tabledecorload(){
+    window.location.href="./tabledecor.html";
+}
