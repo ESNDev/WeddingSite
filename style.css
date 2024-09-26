@@ -13,6 +13,12 @@ html {
 h1 {
     font-size: 40px;
 }
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
 #header1 {
     width: 100%;
     background-color: white;
@@ -110,10 +116,15 @@ h1 {
 #decorbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
+    color: #514f49;
 }
 #decorbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#decorbody h3 {
+    color: #648396;
 }
 #decorbody ul {
     display: flex;
@@ -147,9 +158,10 @@ h1 {
     cursor: pointer;
 }
 #decorbody ul li label {
-    color: #d9c2b0;
+    color: #648396;
     font-size: 35px;
     user-select: none;
+    font-weight: bold;
 }
 #decorbody ul li label:hover {
     cursor: pointer;
@@ -157,10 +169,15 @@ h1 {
 #tabledecorbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
+    color: #514f49;
 }
 #tabledecorbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#tabledecorbody h3 {
+    color: #648396;
 }
 #tabledecorbody ul {
     display: grid;
@@ -195,9 +212,10 @@ h1 {
     cursor: pointer;
 }
 #tabledecorbody ul li label {
-    color: #d9c2b0;
+    color: #648396;
     font-size: 35px;
     user-select: none;
+    font-weight: bold;
 }
 #tabledecorbody ul li label:hover {
     cursor: pointer;
@@ -234,7 +252,6 @@ h1 {
 #footer ul li {
     display: flex;
     flex-direction: column;
-    width: 30%;
     margin-left: 0;
     margin-right: 0;
     height: 400px;
@@ -270,7 +287,9 @@ h1 {
 }
 #fli1 label {
     margin-right: 100px;
-    margin: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
 }
 #fli3 {
     width: 500px;
