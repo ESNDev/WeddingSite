@@ -183,18 +183,22 @@ h3 {
     color: #648396;
 }
 #tabledecorbody ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
     margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #tabledecorbody ul li {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2px;
+    margin-right: 2px;
     width: 300px;
     height: 400px;
     user-select: none;
@@ -221,6 +225,238 @@ h3 {
     font-weight: bold;
 }
 #tabledecorbody ul li label:hover {
+    cursor: pointer;
+}
+#archesbody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#archesbody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#archesbody h3 {
+    color: #648396;
+}
+#archesbody ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#archesbody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#archesbody ul li:hover {
+    cursor: pointer;
+}
+#archesbody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#archesbody ul li img:hover {
+    cursor: pointer;
+}
+#archesbody ul li label {
+    color: #648396;
+    font-size: 35px;
+    user-select: none;
+    font-weight: bold;
+}
+#archesbody ul li label:hover {
+    cursor: pointer;
+}
+#signsbody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#signsbody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#signsbody h3 {
+    color: #648396;
+}
+#signsbody ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#signsbody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#signsbody ul li:hover {
+    cursor: pointer;
+}
+#signsbody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#signsbody ul li img:hover {
+    cursor: pointer;
+}
+#signsbody ul li label {
+    color: #648396;
+    font-size: 35px;
+    user-select: none;
+    font-weight: bold;
+}
+#signsbody ul li label:hover {
+    cursor: pointer;
+}
+#tablebody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#tablebody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#tablebody h3 {
+    color: #648396;
+}
+#tablebody ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tablebody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#tablebody ul li:hover {
+    cursor: pointer;
+}
+#tablebody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#tablebody ul li img:hover {
+    cursor: pointer;
+}
+#tablebody ul li label {
+    color: #648396;
+    font-size: 35px;
+    user-select: none;
+    font-weight: bold;
+}
+#tablebody ul li label:hover {
+    cursor: pointer;
+}
+#linenbody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#linenbody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#linenbody h3 {
+    color: #648396;
+}
+#linenbody ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#linenbody ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#linenbody ul li:hover {
+    cursor: pointer;
+}
+#linenbody ul li img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#linenbody ul li img:hover {
+    cursor: pointer;
+}
+#linenbody ul li label {
+    color: #648396;
+    font-size: 35px;
+    user-select: none;
+    font-weight: bold;
+}
+#linenbody ul li label:hover {
     cursor: pointer;
 }
 #footer {
