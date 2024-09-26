@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MM Event Rentals</title>
+        <link href = "style.css" rel = "stylesheet">
+        <script src="jscontrol.js"></script>
+        <link rel="icon" href="logo.png" type="image/icon type">
+    </head>
+
+    <div id="header1">
+        <img src="logo.png" onclick="indexload()">
+    </div>
+    <div id="header2">
+        <img src="example.png">
+    </div>
+    <div id="header3">
+        <ul>
+            <button onclick="aboutusload()">ABOUT US</button>
+            <button onclick="galleryload()">GALLERY</button>
+            <button onclick="contactload()">CONTACT</button>
+        </ul>
+    </div>
+
+    <div id="contactbody">
+        <h1>CONTACT</h1>
+        <h2>FILL OUT A FORM TO GET A QUOTE</h2>
+        <form action="" method="get" class="contactform">
+            <div class="contactform">
+                <label for="name">name: </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="contactform">
+                <label for="phone">phone: </label>
+                <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="contactform">
+                <label for="email">e-mail: </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="contactform">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <img src="logo.png" onclick="indexload()">
+            <ul>
+                <li id="fli1"><label onclick="aboutusload()">ABOUT US</label><label onclick="galleryload()">GALLERY</label><label onclick="contactload()">CONTACT</label></li>
+                <li id="fli2"><img src="webimage.png"><img src="emailimage.png"><img src="FBimage.png"></li>
+                <li id="fli3"><label>mmeventrentals.com</label><label>rentals.eventsmm@gmail.com</label><label></label></li>
+            </ul>
+        </ul>
+    </div>
+</html>

@@ -26,5 +26,5 @@ function galleryload(){
     window.location.href="./gallery.html";
 }
 function contactload(){
-    
+    window.location.href="./contact.html"
 }
