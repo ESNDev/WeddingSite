@@ -8,43 +8,43 @@
     </head>
 
     <div id="header1">
-        <img src="logo.png">
+        <img src="logo.png" onclick="indexload()">
     </div>
     <div id="header2">
         <img src="example.png">
     </div>
     <div id="header3">
         <ul>
-            <button>ABOUT US</button>
-            <button>GALLERY</button>
-            <button>CONTACT</button>
+            <button onclick="aboutusload()">ABOUT US</button>
+            <button onclick="galleryload()">GALLERY</button>
+            <button onclick="contactload()">CONTACT</button>
         </ul>
     </div>
 
     <div id="indexbody">
         <h1>BROWSE OUR INVENTORY</h1>
         <ul>
-            <li>
+            <li onclick="decorload()">
                 <img src="decor.png">
                 <label>DECOR</label>
             </li>
-            <li>
+            <li onclick="tabledecorload()">
                 <img src="table.png">
                 <label>TABLE DECOR</label>
             </li>
-            <li>
+            <li onclick="archesload()">
                 <img src="arches.png">
                 <label>ARCHES</label>
             </li>
-            <li>
+            <li onclick="signsload()">
                 <img src="signs.png">
                 <label>SIGNS & EASELS</label>
             </li>
-            <li>
+            <li onclick="tablesload()">
                 <img src="tables.png">
                 <label>TABLES</label>
             </li>
-            <li>
+            <li onclick="linensload()">
                 <img src="linens.png">
                 <label>LINENS</label>
             </li>
@@ -53,9 +53,9 @@
 
     <div id="footer">
         <ul>
-            <img src="logo.png">
+            <img src="logo.png" onclick="indexload()">
             <ul>
-                <li id="fli1"><label>ABOUT US</label><label>GALLERY</label><label>CONTACT</label></li>
+                <li id="fli1"><label onclick="aboutusload()">ABOUT US</label><label onclick="galleryload()">GALLERY</label><label onclick="contactload()">CONTACT</label></li>
                 <li id="fli2"><img src="webimage.png"><img src="emailimage.png"><img src="FBimage.png"></li>
                 <li id="fli3"><label>mmeventrentals.com</label><label>rentals.eventsmm@gmail.com</label><label></label></li>
             </ul>
