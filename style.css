@@ -127,25 +127,31 @@ h3 {
     color: #648396;
 }
 #decorbody ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 #decorbody ul li {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
+    margin-left: 2px;
+    margin-right: 2px;
     user-select: none;
     -webkit-user-drag: none;
-    border: 1px solid black;
 }
 #decorbody ul li:hover {
     cursor: pointer;
 }
 #decorbody ul li img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     user-select: none;
     -webkit-user-drag: none;
