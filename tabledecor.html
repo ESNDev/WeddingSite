@@ -8,16 +8,16 @@
     </head>
 
     <div id="header1">
-        <img src="logo.png">
+        <img src="logo.png" onclick="indexload()">
     </div>
     <div id="header2">
         <img src="example.png">
     </div>
     <div id="header3">
         <ul>
-            <button>ABOUT US</button>
-            <button>GALLERY</button>
-            <button>CONTACT</button>
+            <button onclick="aboutusload()">ABOUT US</button>
+            <button onclick="galleryload()">GALLERY</button>
+            <button onclick="contactload()">CONTACT</button>
         </ul>
     </div>
 
@@ -56,9 +56,9 @@
 
     <div id="footer">
         <ul>
-            <img src="logo.png">
+            <img src="logo.png" onclick="indexload()">
             <ul>
-                <li id="fli1"><label>ABOUT US</label><label>GALLERY</label><label>CONTACT</label></li>
+                <li id="fli1"><label onclick="aboutusload()">ABOUT US</label><label onclick="galleryload()">GALLERY</label><label onclick="contactload()">CONTACT</label></li>
                 <li id="fli2"><img src="webimage.png"><img src="emailimage.png"><img src="FBimage.png"></li>
                 <li id="fli3"><label>mmeventrentals.com</label><label>rentals.eventsmm@gmail.com</label><label></label></li>
             </ul>
