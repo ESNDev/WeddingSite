@@ -459,6 +459,72 @@ h3 {
 #linenbody ul li label:hover {
     cursor: pointer;
 }
+#gallerybody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#gallerybody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#gallerybody h3 {
+    color: #648396;
+}
+#gallerybody ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gallerybody ul img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 0;
+}
+#aboutmebody h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #514f49;
+}
+#aboutmebody h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#aboutmebody h3 {
+    color: #648396;
+}
+#aboutmebody2 {
+    background-color: #648396;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+#aboutmebody2 h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #d9c2b0;
+}
+#aboutmebody2 h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#aboutmebody2 h3 {
+    color: #d9c2b0;
+}
 #footer {
     color: black;
     background-color: #d9c2b0;
