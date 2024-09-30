@@ -1,4 +1,4 @@
-const selectedItems = [];
+const selectedItems = ["test", "test2"];
 drapery1Selected = false;
 function indexload(){
     window.location.href="./index.html"
@@ -37,7 +37,8 @@ function drapery1(){
     }
     else
     {
-        selectedItems.concat("drapery1");
+        const temp = ["drapery1"];
+        selectedItems.concat(temp);
         drapery1Selected = true;
         alert(selectedItems);
     }
