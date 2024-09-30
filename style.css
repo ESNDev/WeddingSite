@@ -559,6 +559,9 @@ h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#submitbutton {
+    border: none;
+}
 #footer {
     color: black;
     background-color: #d9c2b0;
