@@ -550,6 +550,15 @@ h3 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+#contactbody input{
+    background: none;
+    color: #658397;
+    border: 1px solid #658397;
+    padding: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #footer {
     color: black;
     background-color: #d9c2b0;
