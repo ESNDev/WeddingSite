@@ -39,5 +39,6 @@ function drapery1(){
     {
         selectedItems.concat("drapery1");
         drapery1Selected = true;
+        alert(selectedItems);
     }
 }
