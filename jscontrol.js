@@ -1,4 +1,3 @@
-const selectedItems = ["test", "test2"];
 drapery1Selected = false;
 function indexload(){
     window.location.href="./index.html"
@@ -28,18 +27,20 @@ function galleryload(){
     window.location.href="./gallery.html";
 }
 function contactload(){
-    window.location.href="./contact.html"
+    window.location.href="./contact.html";
 }
 function drapery1(){
+    drapery1element = document.getElementById("drapery1");
     if(drapery1Selected)
     {
         drapery1Selected = false;
+        drapery1element.style.color = "#648396";
+        drapery1element.innerText = "+";
     }
     else
     {
-        const temp = ["drapery1"];
-        selectedItems.concat(temp);
         drapery1Selected = true;
-        alert(selectedItems);
+        drapery1element.style.color = "Red";
+        drapery1element.innerText = "X";
     }
 }
