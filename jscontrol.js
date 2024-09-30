@@ -38,6 +38,6 @@ function drapery1(){
     else
     {
         selectedItems.concat("drapery1");
-        drapery1Selected = true
+        drapery1Selected = true;
     }
 }
