@@ -1,3 +1,5 @@
+const selectedItems = [];
+drapery1Selected = false;
 function indexload(){
     window.location.href="./index.html"
 }
@@ -27,4 +29,15 @@ function galleryload(){
 }
 function contactload(){
     window.location.href="./contact.html"
+}
+function drapery1(){
+    if(drapery1Selected)
+    {
+        drapery1Selected = false;
+    }
+    else
+    {
+        selectedItems.concat("drapery1");
+        drapery1Selected = true
+    }
 }
