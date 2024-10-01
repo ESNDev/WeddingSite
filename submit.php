@@ -1,1 +1,1 @@
-mail("devonleeh@gmail.com,"Subject","Test")
+<?php mail("devonleeh@gmail.com","Subject","Test") ?>
