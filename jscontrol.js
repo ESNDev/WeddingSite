@@ -1,9 +1,10 @@
 drapery1Selected = false;
 function indexload(){
-    window.location.href="./index.html"
+    window.location.href="./index.html";
 }
 function decorload(){
-    window.location.href="./decor.html"
+    window.location.href="./decor.html";
+    drapery1();
 }
 function tabledecorload(){
     window.location.href="./tabledecor.html";
@@ -28,18 +29,37 @@ function galleryload(){
 }
 function contactload(){
     window.location.href="./contact.html";
+    itemList();
 }
-function drapery1(){
-    drapery1element = document.getElementById("drapery1");
+
+function itemList(){
+    itemlistelement = document.getElementById("itemlist");
+    if(drapery1Selected)
+    {
+        drapery1img = document.createElement("img");
+        itemlistelement.appendchild(drapery1img);
+    }
+}
+
+function drapery1clicked(){
     if(drapery1Selected)
     {
         drapery1Selected = false;
+    }
+    else
+    {
+        drapery1Selected = true;
+    }
+    drapery1();
+}
+function drapery1(){
+    drapery1element = document.getElementById("drapery1");
+    if(drapery1Selected){
         drapery1element.style.color = "#648396";
         drapery1element.innerText = "+";
     }
     else
     {
-        drapery1Selected = true;
         drapery1element.style.color = "Red";
         drapery1element.innerText = "X";
     }

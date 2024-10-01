@@ -564,8 +564,10 @@ h3 {
 }
 #submitbutton {
     border: none;
-    background-color: brown;
-    border-radius: 10px;
+    background-color: #524f4a;
+    color: #d8c2af;
+    width: 100px;
+    font-weight: bold;
 }
 #submitbutton:hover{
     cursor: pointer;
