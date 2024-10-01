@@ -166,6 +166,7 @@ h3 {
     font-size: 35px;
     user-select: none;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #decorbody ul li label:hover {
     cursor: pointer;
@@ -652,4 +653,19 @@ h3 {
 }
 #fli3 label:hover{
     cursor: default;
+}
+
+#itemlist {
+    border: 1px solid #658397;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#itemlist img {
+    width:80px;
+    height: 80px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
