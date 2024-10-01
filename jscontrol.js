@@ -33,6 +33,7 @@ function loaddecoritems(){
     drapery1();
     drapery2();
     drapery3();
+    drapery4();
 }
 
 function itemList(){
@@ -54,6 +55,12 @@ function itemList(){
         drapery3img = document.createElement("img");
         drapery3img.src = "example.png";
         itemlistelement.appendChild(drapery3img);
+    }
+    if(localStorage.getItem("drapery4Selected") == "t")
+    {
+        drapery4img = document.createElement("img");
+        drapery4img.src = "example.png";
+        itemlistelement.appendChild(drapery4img);
     }
 }
 
@@ -129,5 +136,30 @@ function drapery3(){
     {
         drapery3element.style.color = "#648396";
         drapery3element.innerText = "+";
+    }
+}
+
+function drapery4clicked(){
+    if(localStorage.getItem("drapery4Selected") == "t")
+    {
+        localStorage.setItem("drapery4Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("drapery4Selected", "t");
+    }
+    drapery4();
+}
+function drapery4(){
+    drapery4element = document.getElementById("drapery4");
+    if(localStorage.getItem("drapery4Selected") == "t")
+    {
+        drapery4element.style.color = "Red";
+        drapery4element.innerText = "X";
+    }
+    else
+    {
+        drapery4element.style.color = "#648396";
+        drapery4element.innerText = "+";
     }
 }
