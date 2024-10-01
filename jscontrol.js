@@ -1,10 +1,9 @@
-drapery1Selected = false;
 function indexload(){
+    alert(localStorage.getItem("drapery1Selected"));
     window.location.href="./index.html";
 }
 function decorload(){
     window.location.href="./decor.html";
-    drapery1();
 }
 function tabledecorload(){
     window.location.href="./tabledecor.html";
@@ -34,7 +33,7 @@ function contactload(){
 
 function itemList(){
     itemlistelement = document.getElementById("itemlist");
-    if(drapery1Selected)
+    if(localStorage.getItem("drapery1Selected") == "t")
     {
         drapery1img = document.createElement("img");
         itemlistelement.appendchild(drapery1img);
@@ -42,25 +41,27 @@ function itemList(){
 }
 
 function drapery1clicked(){
-    if(drapery1Selected)
+    if(localStorage.getItem("drapery1Selected") == "t")
     {
-        drapery1Selected = false;
+        localStorage.setItem("drapery1Selected", "f");
     }
     else
     {
-        drapery1Selected = true;
+        localStorage.setItem("drapery1Selected", "t");
     }
     drapery1();
 }
 function drapery1(){
     drapery1element = document.getElementById("drapery1");
-    if(drapery1Selected){
-        drapery1element.style.color = "#648396";
-        drapery1element.innerText = "+";
-    }
-    else
+    alert(drapery1element);
+    if(localStorage.getItem("drapery1Selected") == "t")
     {
         drapery1element.style.color = "Red";
         drapery1element.innerText = "X";
+    }
+    else
+    {
+        drapery1element.style.color = "#648396";
+        drapery1element.innerText = "+";
     }
 }
