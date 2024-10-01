@@ -550,7 +550,7 @@ h3 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#contactbody input{
+.contactform input{
     background: none;
     color: #658397;
     border: 1px solid #658397;
@@ -559,8 +559,16 @@ h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.contactform input:hover{
+    cursor: text;
+}
 #submitbutton {
     border: none;
+    background-color: brown;
+    border-radius: 10px;
+}
+#submitbutton:hover{
+    cursor: pointer;
 }
 #footer {
     color: black;
