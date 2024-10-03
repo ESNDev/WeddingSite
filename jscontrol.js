@@ -190,14 +190,14 @@ function itemList(){
     }
     if(localStorage.getItem("table1Selected") == "t")
     {
-        table1img = document.createElement("img");
-        table1img.src = "example.png";
+        table1img = document.createElement("label");
+        table1img.innerText = "120 in.";
         itemlistelement.appendChild(table1img);
     }
     if(localStorage.getItem("table2Selected") == "t")
     {
-        table2img = document.createElement("img");
-        table2img.src = "example.png";
+        table2img = document.createElement("label");
+        table2img.innerText = "Rectangle, 90 x 156 in.";
         itemlistelement.appendChild(table2img);
     }
     if(localStorage.getItem("linen1Selected") == "t")
@@ -208,20 +208,20 @@ function itemList(){
     }
     if(localStorage.getItem("linen2Selected") == "t")
     {
-        linen2img = document.createElement("img");
-        linen2img.src = "example.png";
+        linen2img = document.createElement("label");
+        linen2img.innerText = "Black table cloths";
         itemlistelement.appendChild(linen2img);
     }
     if(localStorage.getItem("linen3Selected") == "t")
     {
-        linen3img = document.createElement("img");
-        linen3img.src = "example.png";
+        linen3img = document.createElement("label");
+        linen3img.innerText = "Rectangle, 90 x 156 in.";
         itemlistelement.appendChild(linen3img);
     }
     if(localStorage.getItem("linen4Selected") == "t")
     {
-        linen4img = document.createElement("img");
-        linen4img.src = "example.png";
+        linen4img = document.createElement("label");
+        linen4img.innerText = "White chair covers";
         itemlistelement.appendChild(linen4img);
     }
 }
