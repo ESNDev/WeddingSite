@@ -20,31 +20,31 @@
             <button onclick="contactload()">CONTACT</button>
         </ul>
     </div>
-
+    <body onload="loadsignitems()"></body>
     <div id="signsbody">
         <h1>SIGNS & EASELS</h1>
         <h3>All items added will appear in your quote on the contact form</h3>
         <h2>SIGNS</h2>
         <ul>
-            <li>
+            <li onclick="sign1clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="sign1">+</label>
             </li>
-            <li>
+            <li onclick="sign2clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="sign2">+</label>
             </li>
         </ul>
         <h2>EASELS</h2>
         <h3>Gold & Black</h3>
         <ul>
-            <li>
+            <li onclick="easel1clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="easel1">+</label>
             </li>
-            <li>
+            <li onclick="easel2clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="easel2">+</label>
             </li>
         </ul>
     </div>

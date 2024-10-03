@@ -48,6 +48,23 @@ function loadtabledecoritems(){
     vases8();
 }
 
+function loadarchitems(){
+    arch1();
+    arch2();
+}
+
+function loadsignitems(){
+    sign1();
+    sign2();
+    easel1();
+    easel2();
+}
+
+function loadtableitems(){
+    table1();
+    table2();
+}
+
 function itemList(){
     itemlistelement = document.getElementById("itemlist");
     if(localStorage.getItem("drapery1Selected") == "t")
@@ -127,6 +144,54 @@ function itemList(){
         candle1img = document.createElement("img");
         candle1img.src = "example.png";
         itemlistelement.appendChild(candle1img);
+    }
+    if(localStorage.getItem("arch1Selected") == "t")
+    {
+        arch1img = document.createElement("img");
+        arch1img.src = "example.png";
+        itemlistelement.appendChild(arch1img);
+    }
+    if(localStorage.getItem("arch2Selected") == "t")
+    {
+        arch2img = document.createElement("img");
+        arch2img.src = "example.png";
+        itemlistelement.appendChild(arch2img);
+    }
+    if(localStorage.getItem("sign1Selected") == "t")
+    {
+        sign1img = document.createElement("img");
+        sign1img.src = "example.png";
+        itemlistelement.appendChild(sign1img);
+    }
+    if(localStorage.getItem("sign2Selected") == "t")
+    {
+        sign2img = document.createElement("img");
+        sign2img.src = "example.png";
+        itemlistelement.appendChild(sign2img);
+    }
+    if(localStorage.getItem("easel1Selected") == "t")
+    {
+        easel1img = document.createElement("img");
+        easel1img.src = "example.png";
+        itemlistelement.appendChild(easel1img);
+    }
+    if(localStorage.getItem("easel2Selected") == "t")
+    {
+        easel2img = document.createElement("img");
+        easel2img.src = "example.png";
+        itemlistelement.appendChild(easel2img);
+    }
+    if(localStorage.getItem("table1Selected") == "t")
+    {
+        table1img = document.createElement("img");
+        table1img.src = "example.png";
+        itemlistelement.appendChild(table1img);
+    }
+    if(localStorage.getItem("table2Selected") == "t")
+    {
+        table2img = document.createElement("img");
+        table2img.src = "example.png";
+        itemlistelement.appendChild(table2img);
     }
 }
 
@@ -452,5 +517,205 @@ function candle1(){
     {
         candle1element.style.color = "#648396";
         candle1element.innerText = "+";
+    }
+}
+
+function arch1clicked(){
+    if(localStorage.getItem("arch1Selected") == "t")
+    {
+        localStorage.setItem("arch1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("arch1Selected", "t");
+    }
+    arch1();
+}
+function arch1(){
+    arch1element = document.getElementById("arch1");
+    if(localStorage.getItem("arch1Selected") == "t")
+    {
+        arch1element.style.color = "Red";
+        arch1element.innerText = "X";
+    }
+    else
+    {
+        arch1element.style.color = "#648396";
+        arch1element.innerText = "+";
+    }
+}
+
+function arch2clicked(){
+    if(localStorage.getItem("arch2Selected") == "t")
+    {
+        localStorage.setItem("arch2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("arch2Selected", "t");
+    }
+    arch2();
+}
+function arch2(){
+    arch2element = document.getElementById("arch2");
+    if(localStorage.getItem("arch2Selected") == "t")
+    {
+        arch2element.style.color = "Red";
+        arch2element.innerText = "X";
+    }
+    else
+    {
+        arch2element.style.color = "#648396";
+        arch2element.innerText = "+";
+    }
+}
+
+function sign1clicked(){
+    if(localStorage.getItem("sign1Selected") == "t")
+    {
+        localStorage.setItem("sign1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("sign1Selected", "t");
+    }
+    sign1();
+}
+function sign1(){
+    sign1element = document.getElementById("sign1");
+    if(localStorage.getItem("sign1Selected") == "t")
+    {
+        sign1element.style.color = "Red";
+        sign1element.innerText = "X";
+    }
+    else
+    {
+        sign1element.style.color = "#648396";
+        sign1element.innerText = "+";
+    }
+}
+
+function sign2clicked(){
+    if(localStorage.getItem("sign2Selected") == "t")
+    {
+        localStorage.setItem("sign2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("sign2Selected", "t");
+    }
+    sign2();
+}
+function sign2(){
+    sign2element = document.getElementById("sign2");
+    if(localStorage.getItem("sign2Selected") == "t")
+    {
+        sign2element.style.color = "Red";
+        sign2element.innerText = "X";
+    }
+    else
+    {
+        sign2element.style.color = "#648396";
+        sign2element.innerText = "+";
+    }
+}
+
+function easel1clicked(){
+    if(localStorage.getItem("easel1Selected") == "t")
+    {
+        localStorage.setItem("easel1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("easel1Selected", "t");
+    }
+    easel1();
+}
+function easel1(){
+    easel1element = document.getElementById("easel1");
+    if(localStorage.getItem("easel1Selected") == "t")
+    {
+        easel1element.style.color = "Red";
+        easel1element.innerText = "X";
+    }
+    else
+    {
+        easel1element.style.color = "#648396";
+        easel1element.innerText = "+";
+    }
+}
+
+function easel2clicked(){
+    if(localStorage.getItem("easel2Selected") == "t")
+    {
+        localStorage.setItem("easel2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("easel2Selected", "t");
+    }
+    easel2();
+}
+function easel2(){
+    easel2element = document.getElementById("easel2");
+    if(localStorage.getItem("easel2Selected") == "t")
+    {
+        easel2element.style.color = "Red";
+        easel2element.innerText = "X";
+    }
+    else
+    {
+        easel2element.style.color = "#648396";
+        easel2element.innerText = "+";
+    }
+}
+
+function table1clicked(){
+    if(localStorage.getItem("table1Selected") == "t")
+    {
+        localStorage.setItem("table1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("table1Selected", "t");
+    }
+    table1();
+}
+function table1(){
+    table1element = document.getElementById("table1");
+    if(localStorage.getItem("table1Selected") == "t")
+    {
+        table1element.style.color = "Red";
+        table1element.innerText = "X";
+    }
+    else
+    {
+        table1element.style.color = "#648396";
+        table1element.innerText = "+";
+    }
+}
+
+function table2clicked(){
+    if(localStorage.getItem("table2Selected") == "t")
+    {
+        localStorage.setItem("table2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("table2Selected", "t");
+    }
+    table2();
+}
+function table2(){
+    table2element = document.getElementById("table2");
+    if(localStorage.getItem("table2Selected") == "t")
+    {
+        table2element.style.color = "Red";
+        table2element.innerText = "X";
+    }
+    else
+    {
+        table2element.style.color = "#648396";
+        table2element.innerText = "+";
     }
 }
