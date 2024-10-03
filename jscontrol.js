@@ -34,6 +34,9 @@ function loaddecoritems(){
     drapery2();
     drapery3();
     drapery4();
+    vases1();
+    vases2();
+    candle1();
 }
 
 function itemList(){
@@ -61,6 +64,24 @@ function itemList(){
         drapery4img = document.createElement("img");
         drapery4img.src = "example.png";
         itemlistelement.appendChild(drapery4img);
+    }
+    if(localStorage.getItem("vases1Selected") == "t")
+    {
+        vases1img = document.createElement("img");
+        vases1img.src = "example.png";
+        itemlistelement.appendChild(vases1img);
+    }
+    if(localStorage.getItem("vases2Selected") == "t")
+    {
+        vases2img = document.createElement("img");
+        vases2img.src = "example.png";
+        itemlistelement.appendChild(vases2img);
+    }
+    if(localStorage.getItem("candle1Selected") == "t")
+    {
+        candle1img = document.createElement("img");
+        candle1img.src = "example.png";
+        itemlistelement.appendChild(candle1img);
     }
 }
 
@@ -161,5 +182,80 @@ function drapery4(){
     {
         drapery4element.style.color = "#648396";
         drapery4element.innerText = "+";
+    }
+}
+
+function vases1clicked(){
+    if(localStorage.getItem("vases1Selected") == "t")
+    {
+        localStorage.setItem("vases1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("vases1Selected", "t");
+    }
+    vases1();
+}
+function vases1(){
+    vases1element = document.getElementById("vases1");
+    if(localStorage.getItem("vases1Selected") == "t")
+    {
+        vases1element.style.color = "Red";
+        vases1element.innerText = "X";
+    }
+    else
+    {
+        vases1element.style.color = "#648396";
+        vases1element.innerText = "+";
+    }
+}
+
+function vases2clicked(){
+    if(localStorage.getItem("vases2Selected") == "t")
+    {
+        localStorage.setItem("vases2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("vases2Selected", "t");
+    }
+    vases2();
+}
+function vases2(){
+    vases2element = document.getElementById("vases2");
+    if(localStorage.getItem("vases2Selected") == "t")
+    {
+        vases2element.style.color = "Red";
+        vases2element.innerText = "X";
+    }
+    else
+    {
+        vases2element.style.color = "#648396";
+        vases2element.innerText = "+";
+    }
+}
+
+function candle1clicked(){
+    if(localStorage.getItem("candle1Selected") == "t")
+    {
+        localStorage.setItem("candle1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("candle1Selected", "t");
+    }
+    candle1();
+}
+function candle1(){
+    candle1element = document.getElementById("candle1");
+    if(localStorage.getItem("candle1Selected") == "t")
+    {
+        candle1element.style.color = "Red";
+        candle1element.innerText = "X";
+    }
+    else
+    {
+        candle1element.style.color = "#648396";
+        candle1element.innerText = "+";
     }
 }
