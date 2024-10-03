@@ -65,6 +65,13 @@ function loadtableitems(){
     table2();
 }
 
+function loadlinenitems(){
+    linen1();
+    linen2();
+    linen3();
+    linen4();
+}
+
 function itemList(){
     itemlistelement = document.getElementById("itemlist");
     if(localStorage.getItem("drapery1Selected") == "t")
@@ -192,6 +199,30 @@ function itemList(){
         table2img = document.createElement("img");
         table2img.src = "example.png";
         itemlistelement.appendChild(table2img);
+    }
+    if(localStorage.getItem("linen1Selected") == "t")
+    {
+        linen1img = document.createElement("img");
+        linen1img.src = "example.png";
+        itemlistelement.appendChild(linen1img);
+    }
+    if(localStorage.getItem("linen2Selected") == "t")
+    {
+        linen2img = document.createElement("img");
+        linen2img.src = "example.png";
+        itemlistelement.appendChild(linen2img);
+    }
+    if(localStorage.getItem("linen3Selected") == "t")
+    {
+        linen3img = document.createElement("img");
+        linen3img.src = "example.png";
+        itemlistelement.appendChild(linen3img);
+    }
+    if(localStorage.getItem("linen4Selected") == "t")
+    {
+        linen4img = document.createElement("img");
+        linen4img.src = "example.png";
+        itemlistelement.appendChild(linen4img);
     }
 }
 
@@ -717,5 +748,105 @@ function table2(){
     {
         table2element.style.color = "#648396";
         table2element.innerText = "+";
+    }
+}
+
+function linen1clicked(){
+    if(localStorage.getItem("linen1Selected") == "t")
+    {
+        localStorage.setItem("linen1Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("linen1Selected", "t");
+    }
+    linen1();
+}
+function linen1(){
+    linen1element = document.getElementById("linen1");
+    if(localStorage.getItem("linen1Selected") == "t")
+    {
+        linen1element.style.color = "Red";
+        linen1element.innerText = "X";
+    }
+    else
+    {
+        linen1element.style.color = "#648396";
+        linen1element.innerText = "+";
+    }
+}
+
+function linen2clicked(){
+    if(localStorage.getItem("linen2Selected") == "t")
+    {
+        localStorage.setItem("linen2Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("linen2Selected", "t");
+    }
+    linen2();
+}
+function linen2(){
+    linen2element = document.getElementById("linen2");
+    if(localStorage.getItem("linen2Selected") == "t")
+    {
+        linen2element.style.color = "Red";
+        linen2element.innerText = "X";
+    }
+    else
+    {
+        linen2element.style.color = "#648396";
+        linen2element.innerText = "+";
+    }
+}
+
+function linen3clicked(){
+    if(localStorage.getItem("linen3Selected") == "t")
+    {
+        localStorage.setItem("linen3Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("linen3Selected", "t");
+    }
+    linen3();
+}
+function linen3(){
+    linen3element = document.getElementById("linen3");
+    if(localStorage.getItem("linen3Selected") == "t")
+    {
+        linen3element.style.color = "Red";
+        linen3element.innerText = "X";
+    }
+    else
+    {
+        linen3element.style.color = "#648396";
+        linen3element.innerText = "+";
+    }
+}
+
+function linen4clicked(){
+    if(localStorage.getItem("linen4Selected") == "t")
+    {
+        localStorage.setItem("linen4Selected", "f");
+    }
+    else
+    {
+        localStorage.setItem("linen4Selected", "t");
+    }
+    linen4();
+}
+function linen4(){
+    linen4element = document.getElementById("linen4");
+    if(localStorage.getItem("linen4Selected") == "t")
+    {
+        linen4element.style.color = "Red";
+        linen4element.innerText = "X";
+    }
+    else
+    {
+        linen4element.style.color = "#648396";
+        linen4element.innerText = "+";
     }
 }
