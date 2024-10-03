@@ -20,19 +20,19 @@
             <button onclick="contactload()">CONTACT</button>
         </ul>
     </div>
-
+    <body onload="loadarchitems()"></body>
     <div id="archesbody">
         <h1>ARCHES</h1>
         <h3>All items added will appear in your quote on the contact form</h3>
         <h2>TRIANGLE & RECTANGLE</h2>
         <ul>
-            <li>
+            <li onclick="arch1clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="arch1">+</label>
             </li>
-            <li>
+            <li onclick="arch2clicked()">
                 <img src="example.png">
-                <label>+</label>
+                <label id="arch2">+</label>
             </li>
         </ul>
     </div>
