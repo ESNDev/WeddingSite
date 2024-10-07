@@ -555,7 +555,7 @@ h3 {
     color: #658397;
     border: 1px solid #658397;
     padding: 20px;
-    width: 200px;
+    width: 50vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -641,7 +641,7 @@ h3 {
 #fli1 label {
     margin: auto;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     font-size: 4vw;
 }
 #fli1 label:hover{
@@ -654,6 +654,8 @@ h3 {
 #fli3 label {
     margin: auto;
     font-size: 3vw;
+    margin-bottom: 57px;
+    margin-top: 0;
 }
 #fli3 label:hover{
     cursor: default;
@@ -662,7 +664,7 @@ h3 {
 #itemlist {
     border: 1px solid #658397;
     padding: 20px;
-    width: 200px;
+    width: 50vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -670,7 +672,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
 }
 #itemlist img {
-    width:80px;
+    width: 80px;
     height: 80px;
     margin-left: 2px;
     margin-right: 2px;
