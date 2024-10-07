@@ -29,6 +29,10 @@ function contactload(){
     window.location.href="./contact.html";
 }
 
+function submitform() {
+    alert("test");
+}
+
 function loaddecoritems(){
     drapery1();
     drapery2();
