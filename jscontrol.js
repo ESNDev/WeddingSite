@@ -81,25 +81,25 @@ function itemList(){
     if(localStorage.getItem("drapery1Selected") == "t")
     {
         drapery1img = document.createElement("img");
-        drapery1img.src = "example.png";
+        drapery1img.src = "drapery1.jpg";
         itemlistelement.appendChild(drapery1img);
     }
     if(localStorage.getItem("drapery2Selected") == "t")
     {
         drapery2img = document.createElement("img");
-        drapery2img.src = "example.png";
+        drapery2img.src = "drapery2.jpg";
         itemlistelement.appendChild(drapery2img);
     }
     if(localStorage.getItem("drapery3Selected") == "t")
     {
         drapery3img = document.createElement("img");
-        drapery3img.src = "example.png";
+        drapery3img.src = "drapery3.jpg";
         itemlistelement.appendChild(drapery3img);
     }
     if(localStorage.getItem("drapery4Selected") == "t")
     {
         drapery4img = document.createElement("img");
-        drapery4img.src = "example.png";
+        drapery4img.src = "drapery4.jpg";
         itemlistelement.appendChild(drapery4img);
     }
     if(localStorage.getItem("vases1Selected") == "t")
@@ -153,7 +153,7 @@ function itemList(){
     if(localStorage.getItem("candle1Selected") == "t")
     {
         candle1img = document.createElement("img");
-        candle1img.src = "example.png";
+        candle1img.src = "candles1.jpg";
         itemlistelement.appendChild(candle1img);
     }
     if(localStorage.getItem("arch1Selected") == "t")
