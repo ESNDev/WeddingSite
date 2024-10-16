@@ -497,10 +497,15 @@ h3 {
 #aboutmebody2 h1 {
     margin-top: 10px;
     margin-bottom: 30px;
+    color: #d9c2b0;
 }
 #aboutmebody2 h2 {
     margin-top: 40px;
     margin-bottom: 40px;
+    color: #d9c2b0;
+}
+#aboutmebody2 h3 {
+    color: #d9c2b0;
 }
 #contactbody h1 {
     margin-top: 100px;
