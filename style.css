@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +13,23 @@ html {
     background-image: url("background.png");
 }
 h1 {
-    font-size: 40px;
+    font-size: 32px;
+    color: #524f4a;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 }
 h2 {
-    font-size: 30px;
+    font-size: 24px;
+    color: #d9c2b0;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 h3 {
     font-size: 24px;
+    color: #658397;
+    font-weight: 400;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-style:italic;
 }
 #header1 {
     width: 100%;
@@ -73,7 +84,6 @@ h3 {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    color: #514f49;
 }
 #indexbody ul {
     display: grid;
@@ -118,15 +128,10 @@ h3 {
 #decorbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #decorbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#decorbody h3 {
-    color: #648396;
 }
 #decorbody ul {
     display: flex;
@@ -174,15 +179,10 @@ h3 {
 #tabledecorbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #tabledecorbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#tabledecorbody h3 {
-    color: #648396;
 }
 #tabledecorbody ul {
     display: flex;
@@ -232,15 +232,10 @@ h3 {
 #archesbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #archesbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#archesbody h3 {
-    color: #648396;
 }
 #archesbody ul {
     display: flex;
@@ -290,15 +285,10 @@ h3 {
 #signsbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #signsbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#signsbody h3 {
-    color: #648396;
 }
 #signsbody ul {
     display: flex;
@@ -348,15 +338,10 @@ h3 {
 #tablebody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #tablebody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#tablebody h3 {
-    color: #648396;
 }
 #tablebody ul {
     display: flex;
@@ -406,15 +391,10 @@ h3 {
 #linenbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #linenbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#linenbody h3 {
-    color: #648396;
 }
 #linenbody ul {
     display: flex;
@@ -464,15 +444,10 @@ h3 {
 #gallerybody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #gallerybody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#gallerybody h3 {
-    color: #648396;
 }
 #gallerybody ul {
     display: flex;
@@ -503,15 +478,12 @@ h3 {
 #aboutmebody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #aboutmebody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
 }
 #aboutmebody h3 {
-    color: #648396;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -525,28 +497,20 @@ h3 {
 #aboutmebody2 h1 {
     margin-top: 10px;
     margin-bottom: 30px;
-    color: #d9c2b0;
 }
 #aboutmebody2 h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
-}
-#aboutmebody2 h3 {
-    color: #d9c2b0;
 }
 #contactbody h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    color: #514f49;
 }
 #contactbody h2 {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #d9c2b0;
 }
 #contactbody h3 {
-    color: #648396;
     margin-top: 50px;
     margin-bottom: 50px;
 }
