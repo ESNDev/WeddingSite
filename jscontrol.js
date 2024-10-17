@@ -48,8 +48,6 @@ function loadtabledecoritems(){
     vases4();
     vases5();
     vases6();
-    vases7();
-    vases8();
 }
 
 function loadarchitems(){
@@ -105,50 +103,38 @@ function itemList(){
     if(localStorage.getItem("vases1Selected") == "t")
     {
         vases1img = document.createElement("img");
-        vases1img.src = "example.png";
+        vases1img.src = "vase1.jpg";
         itemlistelement.appendChild(vases1img);
     }
     if(localStorage.getItem("vases2Selected") == "t")
     {
         vases2img = document.createElement("img");
-        vases2img.src = "example.png";
+        vases2img.src = "vase2.jpg";
         itemlistelement.appendChild(vases2img);
     }
     if(localStorage.getItem("vases3Selected") == "t")
     {
         vases3img = document.createElement("img");
-        vases3img.src = "example.png";
+        vases3img.src = "vase3.jpg";
         itemlistelement.appendChild(vases3img);
     }
     if(localStorage.getItem("vases4Selected") == "t")
     {
         vases4img = document.createElement("img");
-        vases4img.src = "example.png";
+        vases4img.src = "vase4.jpg";
         itemlistelement.appendChild(vases4img);
     }
     if(localStorage.getItem("vases5Selected") == "t")
     {
         vases5img = document.createElement("img");
-        vases5img.src = "example.png";
+        vases5img.src = "vase5.jpg";
         itemlistelement.appendChild(vases5img);
     }
     if(localStorage.getItem("vases6Selected") == "t")
     {
         vases6img = document.createElement("img");
-        vases6img.src = "example.png";
+        vases6img.src = "vase6.jpg";
         itemlistelement.appendChild(vases6img);
-    }
-    if(localStorage.getItem("vases7Selected") == "t")
-    {
-        vases7img = document.createElement("img");
-        vases7img.src = "example.png";
-        itemlistelement.appendChild(vases7img);
-    }
-    if(localStorage.getItem("vases8Selected") == "t")
-    {
-        vases8img = document.createElement("img");
-        vases8img.src = "example.png";
-        itemlistelement.appendChild(vases8img);
     }
     if(localStorage.getItem("candle1Selected") == "t")
     {
