@@ -462,7 +462,7 @@ h3 {
 }
 #gallerybody ul img {
     width: 15vw;
-    height: auto;
+    height: 15vw;
     margin: auto;
     user-select: none;
     -webkit-user-drag: none;
