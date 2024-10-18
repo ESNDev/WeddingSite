@@ -193,7 +193,7 @@ function itemList(){
     if(localStorage.getItem("linen1Selected") == "t")
     {
         linen1img = document.createElement("img");
-        linen1img.src = "example.png";
+        linen1img.src = "linen1.jpg";
         itemlistelement.appendChild(linen1img);
     }
     if(localStorage.getItem("linen2Selected") == "t")
