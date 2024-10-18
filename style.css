@@ -452,9 +452,7 @@ h3 {
 #gallerybody ul {
     display: grid;
     justify-content: center;
-    grid-column: auto;
-    grid-row: auto;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: auto;
@@ -463,11 +461,9 @@ h3 {
     width: 60vw;
 }
 #gallerybody ul img {
-    width: auto;
+    width: 15vw;
     height: auto;
     margin: auto;
-    margin-left: 2px;
-    margin-right: 2px;
     user-select: none;
     -webkit-user-drag: none;
     border-radius: 0;
