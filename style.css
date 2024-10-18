@@ -452,15 +452,15 @@ h3 {
 #gallerybody ul {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 14vw);
+    grid-template-rows: repeat(6, 20vw);
     gap: 10px;
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
-    width: 60vw;
+    width: 100%;
+    height: auto
 }
 #gallerybody ul img {
     width: 100%;
