@@ -145,13 +145,13 @@ function itemList(){
     if(localStorage.getItem("arch1Selected") == "t")
     {
         arch1img = document.createElement("img");
-        arch1img.src = "example.png";
+        arch1img.src = "arch1.jpg";
         itemlistelement.appendChild(arch1img);
     }
     if(localStorage.getItem("arch2Selected") == "t")
     {
         arch2img = document.createElement("img");
-        arch2img.src = "example.png";
+        arch2img.src = "arch2.jpg";
         itemlistelement.appendChild(arch2img);
     }
     if(localStorage.getItem("sign1Selected") == "t")
