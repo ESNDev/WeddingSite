@@ -157,25 +157,25 @@ function itemList(){
     if(localStorage.getItem("sign1Selected") == "t")
     {
         sign1img = document.createElement("img");
-        sign1img.src = "example.png";
+        sign1img.src = "sign1.jpg";
         itemlistelement.appendChild(sign1img);
     }
     if(localStorage.getItem("sign2Selected") == "t")
     {
         sign2img = document.createElement("img");
-        sign2img.src = "example.png";
+        sign2img.src = "sign2.jpg";
         itemlistelement.appendChild(sign2img);
     }
     if(localStorage.getItem("easel1Selected") == "t")
     {
         easel1img = document.createElement("img");
-        easel1img.src = "example.png";
+        easel1img.src = "easel1.jpg";
         itemlistelement.appendChild(easel1img);
     }
     if(localStorage.getItem("easel2Selected") == "t")
     {
         easel2img = document.createElement("img");
-        easel2img.src = "example.png";
+        easel2img.src = "easel2.jpg";
         itemlistelement.appendChild(easel2img);
     }
     if(localStorage.getItem("table1Selected") == "t")
