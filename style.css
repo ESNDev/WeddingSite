@@ -453,6 +453,7 @@ h3 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: auto;
@@ -461,12 +462,16 @@ h3 {
     width: 60vw;
 }
 #gallerybody ul img {
-    width: 15vw;
-    height: 15vw;
+    width: 100%;
+    height: 100%;
     margin: auto;
     user-select: none;
     -webkit-user-drag: none;
     border-radius: 0;
+}
+.gallery1 {
+    grid-column: 2;
+    grid-row: 6;
 }
 #aboutmebody {
     position: relative;
