@@ -1,3 +1,3 @@
 <?php
-mail("devonleeh@gmail.com","Subject","test");
+mail("devonleeh@gmail.com","Subject",$_GET["name"]);
 ?>

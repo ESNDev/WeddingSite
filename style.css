@@ -471,7 +471,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: auto
+    height: auto;
 }
 #gallerybody ul img {
     width: 100%;
@@ -783,4 +783,139 @@ h3 {
     padding-bottom: auto;
     border: 1px solid #658397;
     color: #658397;
+}
+
+@media (max-width: 1100px)
+{
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    #indexbody ul {
+        width: 90%;
+    }
+    #indexbody ul li img {
+        width: 40vw;
+        height: 40vw;
+    }
+    #indexbody ul li label {
+        font-size: 36px;
+    }
+    #decorbody ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5vw;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #decorbody ul li img {
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+    }
+    #tabledecorbody ul {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80vw;
+    }
+    #tabledecorbody ul li img {
+        width: 30vw;
+        height: 30vw;
+    }
+    #archesbody ul{
+        gap: 5vw;
+    }
+    #archesbody ul li img {
+        width: 30vw;
+        height: 30vw;
+    }
+    #signsbody ul{
+        gap: 5vw;
+    }
+    #signsbody ul li img {
+        width: 30vw;
+        height: 30vw;
+    }
+    #linenbody ul li img{
+        width: 30vw;
+        height: 30vw;
+    }
+    #gallerybody ul {
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(6, 26vw);
+    }
+    .contactform input{
+        width: 90vw;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    #submitbutton {
+        width: 300px;
+        font-weight: bold;
+    }
+    #itemlist {
+        width: 90vw;
+        grid-template-columns: repeat(3, 30%);
+        gap: 40px;
+    }
+    #footer {
+        clip-path: polygon(50% 0%, 0% 30%, 0% 100%, 100% 100%, 100% 30%);
+    }
+    #footer ul img {
+        width: 50vw;
+        margin-top: 15vw;
+    }
+    #footer ul ul{
+        grid-template-rows: repeat(6, 4vw);
+        margin-left: 5vw;
+        gap: 2vw;
+    }
+    #footer ul ul #f1{
+        grid-column: 1 / 12;
+        grid-row: 1;
+        text-align: left;
+        font-size: 46px;
+    }
+    #footer ul ul #f2{
+        grid-column: 1 / 12;
+        grid-row: 2;
+        text-align: left;
+        font-size: 46px;
+    }
+    #footer ul ul #f3{
+        grid-column: 1 / 12;
+        grid-row: 3;
+        text-align: left;
+        font-size: 46px;
+    }
+    #footer ul ul #f4{
+        grid-column: 1 / 12;
+        grid-row: 4;
+    }
+    #footer ul ul #f4 label {
+        font-size: 38px;
+    }
+    #footer ul ul #f5{
+        grid-column: 1 / 12;
+        grid-row: 5;
+    }
+    #footer ul ul #f5 label {
+        font-size: 38px;
+    }
+    #footer ul ul #f6{
+        grid-column: 1 / 12;
+        grid-row: 6;
+    }
+    #footer ul ul #f6 label {
+        font-size: 28px;
+    }
 }
